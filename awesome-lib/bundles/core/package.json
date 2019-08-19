@@ -1,0 +1,6 @@
+{
+  "name": "awesome-lib-core",
+  "version": "0.1.0",
+  "main": "awesome-lib-core.cjs.js",
+  "module": "awesome-lib-core.esm.js"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "awesome-lib",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/awesome-lib-default.cjs.js",
+  "module": "dist/awesome-lib-default.esm.js",
+  "scripts": {
+    "clean": "npx rimraf ./dist/* ./.rpt2_cache; ncp ./bundles ./dist/bundles",
+    "prebuild": "npm run clean",
+    "build": "npx tsc",
+    "postbuild": "npx rollup -c ./rollup.config.js",
+    "watch": "npx tsc-watch --onSuccess \"npm run postbuild\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "@babel/plugin-transform-modules-umd": "^7.2.0",
+    "ncp": "^2.0.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.19.4",
+    "rollup-plugin-invariant": "^0.5.6",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.1",
+    "rollup-plugin-typescript2": "^0.22.1",
+    "tsc-watch": "^2.4.0",
+    "typescript": "^3.5.3"
+  }
+}

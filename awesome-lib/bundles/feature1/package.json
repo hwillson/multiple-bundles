@@ -1,0 +1,6 @@
+{
+  "name": "awesome-lib-feature1",
+  "version": "0.1.0",
+  "main": "awesome-lib-feature1.cjs.js",
+  "module": "awesome-lib-feature1.esm.js"
+}
